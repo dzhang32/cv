@@ -83,7 +83,7 @@ Disclaimer {#disclaimer}
 
 Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
 
-The source code is available [on github.com/nstrayer/cv](https://github.com/dzhang32/cv).
+The source code is available [on github.com/dzhang32/cv](https://github.com/dzhang32/cv).
 
 Last updated on `r Sys.Date()`.
 
