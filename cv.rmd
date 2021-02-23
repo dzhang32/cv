@@ -130,7 +130,7 @@ CV %<>% print_section('industry_positions')
 ```
 
 
-Software & data science {data-icon=chart-line}
+Software & programming {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
 ::: aside
