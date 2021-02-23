@@ -88,7 +88,6 @@ The source code is available [on github.com/dzhang32/cv](https://github.com/dzha
 Last updated on `r Sys.Date()`.
 
 
-
 Main
 ================================================================================
 
@@ -101,14 +100,12 @@ CV %<>% print_text_block("intro")
 ```
 
 
-
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('education')
 ```
-
 
 
 Research Experience {data-icon=laptop}
@@ -119,13 +116,12 @@ CV %<>% print_section('research_positions')
 ```
 
 
-
 Industry Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ::: aside
 ```{r}
-CV %<>% print_text_block('industy_experience_aside')
+# CV %<>% print_text_block('industy_experience_aside')
 ```
 :::
 
@@ -133,17 +129,27 @@ CV %<>% print_text_block('industy_experience_aside')
 CV %<>% print_section('industry_positions')
 ```
 
-<!-- These breaks just force a new page so section doesnt get cut off -->
-<br>
-<br>
-<br>
+
+Software & data science {data-icon=chart-line}
+--------------------------------------------------------------------------------
+
+::: aside
+```{r}
+# CV %<>% print_text_block('software')
+```
+:::
+
+```{r}
+CV %<>% print_section('software')
+```
+
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
 ::: aside
 ```{r}
-CV %<>% print_text_block('teaching_experience_aside')
+# CV %<>% print_text_block('teaching_experience_aside')
 ```
 :::
 
@@ -152,30 +158,15 @@ CV %<>% print_section('teaching_positions')
 ```
 
 
-
-Selected Data Science Writing {data-icon=chart-line}
+Selected Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
-::: aside
-```{r}
-CV %<>% print_text_block('data_science_writing_aside')
-```
-:::
-
-```{r}
-CV %<>% print_section('data_science_writings')
-```
-
-
-
-Selected Publications, Posters, and Talks {data-icon=book}
---------------------------------------------------------------------------------
+`r print("hey")`
 
 ```{r}
 CV %<>% print_section('academic_articles')
+
 ```
-
-
 
 ```{r}
 CV %<>% print_links()
