@@ -48,7 +48,7 @@ Aside
 ```{r}
 # Build interactive network of positions colored by section
 # and connected if they occurred in the same year
-datadrivencv::build_network_logo(CV$entries_data)
+# datadrivencv::build_network_logo(CV$entries_data)
 ```
 
 
@@ -104,40 +104,37 @@ Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
+
 CV %<>% print_section('education')
 ```
 
+<br>
+<br>
 
 Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ```{r}
+
 CV %<>% print_section('research_positions')
+
 ```
 
+<br>
+<br>
 
 Industry Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
-
-::: aside
-```{r}
-# CV %<>% print_text_block('industy_experience_aside')
-```
-:::
 
 ```{r}
 CV %<>% print_section('industry_positions')
 ```
 
+<br>
+<br>
 
 Software & programming {data-icon=chart-line}
 --------------------------------------------------------------------------------
-
-::: aside
-```{r}
-# CV %<>% print_text_block('software')
-```
-:::
 
 ```{r}
 CV %<>% print_section('software')
@@ -147,26 +144,23 @@ CV %<>% print_section('software')
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
-::: aside
-```{r}
-# CV %<>% print_text_block('teaching_experience_aside')
-```
-:::
-
 ```{r}
 CV %<>% print_section('teaching_positions')
 ```
 
+<br>
+<br>
 
 Selected Publications {data-icon=book}
 --------------------------------------------------------------------------------
-
-`r print("hey")`
 
 ```{r}
 CV %<>% print_section('academic_articles')
 
 ```
+
+<br>
+<br>
 
 ```{r}
 CV %<>% print_links()
