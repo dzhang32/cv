@@ -46,13 +46,6 @@ Aside
 ================================================================================
 
 ```{r}
-# Build interactive network of positions colored by section
-# and connected if they occurred in the same year
-# datadrivencv::build_network_logo(CV$entries_data)
-```
-
-
-```{r}
 if(params$pdf_mode){
   cat("View this CV online with links at _dzhang32.github.io/cv/_")
 } else {
@@ -67,8 +60,6 @@ Contact {#contact}
 CV %>% print_contact_info()
 ```
 
-
-
 Language Skills {#skills}
 --------------------------------------------------------------------------------
 
@@ -77,16 +68,14 @@ CV %>% print_skill_bars()
 ```
 
 
-
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
+Made with the R package [**datadrivencv**](https://github.com/nstrayer/datadrivencv) and [**pagedown**](https://github.com/rstudio/pagedown). 
 
-The source code is available [on github.com/dzhang32/cv](https://github.com/dzhang32/cv).
+The source code is available on [github.com/dzhang32/cv](https://github.com/dzhang32/cv). 
 
 Last updated on `r Sys.Date()`.
-
 
 Main
 ================================================================================
@@ -104,7 +93,6 @@ Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
-
 CV %<>% print_section('education')
 ```
 
@@ -115,9 +103,7 @@ Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ```{r}
-
 CV %<>% print_section('research_positions')
-
 ```
 
 <br>
