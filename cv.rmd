@@ -156,7 +156,16 @@ Selected Publications {data-icon=book}
 
 ```{r}
 CV %<>% print_section('academic_articles')
+```
 
+<br>
+<br>
+
+Conferences {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('conferences')
 ```
 
 <br>
