@@ -5,7 +5,7 @@
 # loaded and load the cached version in the .Rmd instead of re-fetching it twice
 # for the HTML and PDF rendering. This exercise is left to the reader.
 
-# Knit the HTML version
+# Knit cv to HTML version
 rmarkdown::render("cv.rmd",
                   params = list(pdf_mode = FALSE),
                   output_file = "index.html")
@@ -19,3 +19,8 @@ rmarkdown::render("cv.rmd",
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
                        output = "dz_cv.pdf")
+
+# Knit resume to HTML version
+rmarkdown::render("resume.rmd",
+                  params = list(pdf_mode = FALSE),
+                  output_file = "resume.html")
