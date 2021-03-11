@@ -24,7 +24,11 @@ source("cv_printing_functions.r")
 CV <- create_CV_object(
   data_location = "https://docs.google.com/spreadsheets/d/1ufltIQ6ZzLDeDQ6oDjuCuRIZdx95Zn0YNomXwMELG24/edit?usp=sharing",  
   pdf_mode = params$pdf_mode
+
 )
+
+CV[["entries_data"]] <- CV[["entries_data"]] %>% 
+  dplyr::filter(as.logical(in_cv))
 
 ```
 
@@ -71,7 +75,7 @@ CV %>% print_skill_bars()
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with the R package [**datadrivencv**](https://github.com/nstrayer/datadrivencv) and [**pagedown**](https://github.com/rstudio/pagedown). 
+Made with the R packages [**datadrivencv**](https://github.com/nstrayer/datadrivencv) and [**pagedown**](https://github.com/rstudio/pagedown). 
 
 The source code is available on [github.com/dzhang32/cv](https://github.com/dzhang32/cv). 
 
@@ -109,15 +113,15 @@ CV %<>% print_section('research_positions')
 <br>
 <br>
 
-Industry Experience {data-icon=suitcase}
---------------------------------------------------------------------------------
+<!-- Industry Experience {data-icon=suitcase} -->
+<!-- -------------------------------------------------------------------------------- -->
 
-```{r}
-CV %<>% print_section('industry_positions')
-```
+<!-- ```{r} -->
+<!-- CV %<>% print_section('industry_positions') -->
+<!-- ``` -->
 
-<br>
-<br>
+<!-- <br> -->
+<!-- <br> -->
 
 Software & programming {data-icon=chart-line}
 --------------------------------------------------------------------------------
@@ -125,6 +129,9 @@ Software & programming {data-icon=chart-line}
 ```{r}
 CV %<>% print_section('software')
 ```
+
+<br>
+<br>
 
 
 Teaching Experience {data-icon=chalkboard-teacher}
@@ -134,8 +141,6 @@ Teaching Experience {data-icon=chalkboard-teacher}
 CV %<>% print_section('teaching_positions')
 ```
 
-<br>
-<br>
 
 Selected Publications {data-icon=book}
 --------------------------------------------------------------------------------
