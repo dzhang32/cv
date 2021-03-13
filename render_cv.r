@@ -24,3 +24,5 @@ pagedown::chrome_print(input = tmp_html_cv_loc,
 rmarkdown::render("resume.rmd",
                   params = list(pdf_mode = FALSE),
                   output_file = "resume.html")
+
+Olahova6
