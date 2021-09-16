@@ -45,7 +45,6 @@ if(params$pdf_mode) {
 }
 ```
 
-
 Aside
 ================================================================================
 
@@ -64,13 +63,12 @@ Contact {#contact}
 CV %>% print_contact_info()
 ```
 
-Language Skills {#skills}
+Languages skills {#skills}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %>% print_skill_bars()
 ```
-
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
@@ -103,25 +101,25 @@ CV %<>% print_section('education')
 <br>
 <br>
 
-Research Experience {data-icon=laptop}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('research_positions')
-```
-
-<br>
-<br>
-
-<!-- Industry Experience {data-icon=suitcase} -->
+<!-- Research Experience {data-icon=laptop} -->
 <!-- -------------------------------------------------------------------------------- -->
 
 <!-- ```{r} -->
-<!-- CV %<>% print_section('industry_positions') -->
+<!-- CV %<>% print_section('research_positions') -->
 <!-- ``` -->
 
 <!-- <br> -->
 <!-- <br> -->
+
+Work Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('work_experience')
+```
+
+<br>
+<br>
 
 Software & programming {data-icon=chart-line}
 --------------------------------------------------------------------------------
