@@ -53,7 +53,7 @@ Aside
 if(params$pdf_mode){
   cat("View this CV online with links at _dzhang32.github.io/cv/_")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/dzhang32/cv/raw/main/dz_cv.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this resume](https://github.com/dzhang32/cv/raw/main/dz_resume.pdf)")
 }
 ```
 
@@ -101,18 +101,18 @@ Education {data-icon=graduation-cap data-concise=true}
 CV %<>% print_section('education')
 ```
 
-Research Experience {data-icon=laptop}
+<!-- Research Experience {data-icon=laptop} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- ```{r} -->
+<!-- CV %<>% print_section('research_positions') -->
+<!-- ``` -->
+
+Work Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('research_positions')
-```
-
-Industry Experience {data-icon=suitcase}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('industry_positions')
+CV %<>% print_section('work_experience')
 ```
 
 Software & programming {data-icon=chart-line}
