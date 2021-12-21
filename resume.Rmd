@@ -75,7 +75,7 @@ CV %>% print_skill_bars()
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-The long-form version of my CV is available as a [pdf]()
+The long-form version of my CV with a list of selected publications is available [here](https://dzhang32.github.io/cv/cv.html). 
 
 Made with the R package [**datadrivencv**](https://github.com/nstrayer/datadrivencv) and [**pagedown**](https://github.com/rstudio/pagedown). 
 
@@ -121,23 +121,6 @@ Software & programming {data-icon=chart-line}
 ```{r}
 CV %<>% print_section('software')
 ```
-
-Teaching Experience {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('teaching_positions')
-```
-
-Selected Publications {data-icon=book}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('academic_articles')
-```
-
-<br>
-<br>
 
 ```{r}
 CV %<>% print_links()
