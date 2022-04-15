@@ -94,13 +94,6 @@ David Zhang {#title}
 CV %<>% print_text_block("intro") 
 ```
 
-Education {data-icon=graduation-cap data-concise=true}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('education')
-```
-
 <!-- Research Experience {data-icon=laptop} -->
 <!-- -------------------------------------------------------------------------------- -->
 
@@ -113,6 +106,13 @@ Work Experience {data-icon=suitcase}
 
 ```{r}
 CV %<>% print_section('work_experience')
+```
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('education')
 ```
 
 Software & programming {data-icon=chart-line}
