@@ -24,7 +24,7 @@ source("cv_printing_functions.r")
 CV <- create_CV_object(
   data_location = "https://docs.google.com/spreadsheets/d/1ufltIQ6ZzLDeDQ6oDjuCuRIZdx95Zn0YNomXwMELG24/edit?usp=sharing",  
   pdf_mode = params$pdf_mode
-
+  
 )
 
 CV[["entries_data"]] <- CV[["entries_data"]] %>% 
