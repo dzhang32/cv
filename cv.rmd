@@ -63,7 +63,7 @@ Contact {#contact}
 CV %>% print_contact_info()
 ```
 
-Languages skills {#skills}
+Language skills {#skills}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -97,18 +97,12 @@ Work Experience {data-icon=suitcase}
 CV %<>% print_section('work_experience')
 ```
 
-<br>
-<br>
-
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('education')
 ```
-
-<br>
-<br>
 
 <!-- Research Experience {data-icon=laptop} -->
 <!-- -------------------------------------------------------------------------------- -->
@@ -127,10 +121,6 @@ Software & programming {data-icon=chart-line}
 CV %<>% print_section('software')
 ```
 
-<br>
-<br>
-
-
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
@@ -138,26 +128,18 @@ Teaching Experience {data-icon=chalkboard-teacher}
 CV %<>% print_section('teaching_positions')
 ```
 
-
 Selected Publications {data-icon=book}
 --------------------------------------------------------------------------------
+
+::: aside
+```{r}
+CV %<>% print_text_block('publications_aside')
+```
+:::
 
 ```{r}
 CV %<>% print_section('academic_articles')
 ```
-
-<br>
-<br>
-
-Conferences {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('conferences')
-```
-
-<br>
-<br>
 
 ```{r}
 CV %<>% print_links()
