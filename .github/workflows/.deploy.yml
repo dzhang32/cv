@@ -16,11 +16,11 @@ jobs:
       - uses: r-lib/actions/setup-r@v2
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-        extra-packages: |
-          any::rmarkdown
-          any::pagedown
-          any::googlesheets4
-
+          extra-packages: |
+            any::rmarkdown
+            any::pagedown
+            any::googlesheets4
+          
       - name: Create docs
         run: |
           mkdir docs
