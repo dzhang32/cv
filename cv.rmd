@@ -52,7 +52,7 @@ Aside
 if(params$pdf_mode){
   cat("View this CV online with links at _dzhang32.github.io/cv/_")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/dzhang32/cv/raw/main/dz_cv.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/dzhang32/cv/raw/gh-pages/dz_cv.pdf)")
 }
 ```
 
