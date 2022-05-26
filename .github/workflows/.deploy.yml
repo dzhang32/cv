@@ -23,7 +23,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          install.packages(c("rmarkdown", "pagedown", "googlesheets4"))
+          install.packages(c("rmarkdown", "pagedown", "googlesheets4", "purrr", "dplyr", "readr", "tidyr"))
         shell: Rscript {0}
           
       - name: Create docs
