@@ -9,6 +9,8 @@ output:
   pagedown::html_resume:
     css: ['dd_cv.css', 'resume']
     self_contained: true
+    includes:
+      after_body: footer.html
 ---
 
 ```{r, include=FALSE}
@@ -63,11 +65,18 @@ Contact {#contact}
 CV %>% print_contact_info()
 ```
 
-Language skills {#skills}
+Languages {#languages}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %>% print_skill_bars()
+CV %>% print_skills("language")
+```
+
+Technologies {#technologies}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %>% print_skills("technology")
 ```
 
 Disclaimer {#disclaimer}

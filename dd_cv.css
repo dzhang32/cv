@@ -95,12 +95,11 @@ sup {
   content: auto;
 }
 
-.skill-bar {
-  color: white;
-  padding: 0.1rem 0.25rem;
-  margin-top: 3px;
-  position: relative;
-  width: 100%;
+.skills {
+  margin-bottom: 8px;
+  margin-right: 4px;
+  float: center;
+  width: 10px;
 }
 
 
