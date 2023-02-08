@@ -22,6 +22,8 @@ knitr::opts_chunk$set(
 library(magrittr) # For the pipe
 source("cv_printing_functions.r")
 
+version <- "2023.02.8"
+
 # Read in all data and initialize a CV printer object
 CV <- create_CV_object(
   data_location = "https://docs.google.com/spreadsheets/d/1ufltIQ6ZzLDeDQ6oDjuCuRIZdx95Zn0YNomXwMELG24/edit?usp=sharing",  
