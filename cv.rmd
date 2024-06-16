@@ -26,7 +26,7 @@ version <- "2023.11.09"
 
 # Read in all data and initialize a CV printer object
 CV <- create_CV_object(
-  data_location = "https://docs.google.com/spreadsheets/d/1ufltIQ6ZzLDeDQ6oDjuCuRIZdx95Zn0YNomXwMELG24/edit?usp=sharing",  
+  data_location = "https://docs.google.com/spreadsheets/d/1cX7rMsY_NHVAy2a5-arBEp2gtBMswIc7NoGFwMLwF_o/edit?usp=sharing",  
   pdf_mode = params$pdf_mode
   
 )
@@ -54,7 +54,7 @@ Aside
 
 ```{r}
 if(params$pdf_mode){
-  cat("View this CV online with links at _dzhang32.github.io/cv/_")
+  cat("View this CV online at _dzhang32.github.io/cv/_")
 } else {
   cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/dzhang32/cv/raw/gh-pages/dz_cv.pdf)")
 }
@@ -132,12 +132,6 @@ Software & programming {data-icon=chart-line}
 CV %<>% print_section('software')
 ```
 
-Teaching Experience {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('teaching_positions')
-```
 
 Selected Publications {data-icon=book}
 --------------------------------------------------------------------------------
