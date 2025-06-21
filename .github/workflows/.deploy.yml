@@ -19,11 +19,13 @@ jobs:
           sudo apt-get install libcurl4-openssl-dev
 
       - uses: r-lib/actions/setup-r@v2
-      - uses: r-lib/actions/setup-pandoc@v1
+      - uses: r-lib/actions/setup-pandoc@v2
 
+      # Set R_LIBS_USER for caching R package installations.
       - name: Set R_LIBS_USER
         run: echo "R_LIBS_USER=${R_LIBS_USER:-$HOME/R/library}" >> $GITHUB_ENV
 
+      # Cache R packages installations to speed up CI bottleneck.
       - name: Cache R packages
         uses: actions/cache@v4
         with:
