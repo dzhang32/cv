@@ -12,20 +12,31 @@ jobs:
   deploy-cv:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      
+      - uses: actions/checkout@v4
+
       - name: Install curl
         run: |
           sudo apt-get install libcurl4-openssl-dev
-      
+
       - uses: r-lib/actions/setup-r@v2
       - uses: r-lib/actions/setup-pandoc@v1
-      
+
+      - name: Set R_LIBS_USER
+        run: echo "R_LIBS_USER=${R_LIBS_USER:-$HOME/R/library}" >> $GITHUB_ENV
+
+      - name: Cache R packages
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-${{ runner.os }}-${{ hashFiles('**/cv.rmd') }}
+          restore-keys: |
+            r-${{ runner.os }}-
+
       - name: Install dependencies
         run: |
           install.packages(c("rmarkdown", "pagedown", "googlesheets4", "purrr", "dplyr", "readr", "tidyr", "lubridate"))
         shell: Rscript {0}
-          
+
       - name: Create docs
         run: |
           mkdir docs
