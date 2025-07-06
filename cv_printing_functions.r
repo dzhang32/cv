@@ -145,7 +145,7 @@ print_section <- function(cv, section_id, glue_template = "default"){
 {timeline}
 
 {description_bullets}
-\n\n\n"
+\n\n"
   }
   
   section_data <- dplyr::filter(cv$entries_data, section == section_id)

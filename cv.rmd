@@ -4,7 +4,7 @@ author: David Zhang
 date: "`r Sys.Date()`"
 params:
   pdf_mode:
-    value: true
+    value: false
 output:
   pagedown::html_resume:
     css: ['dd_cv.css', 'resume']
@@ -123,13 +123,12 @@ CV %<>% print_section('education')
 <!-- <br> -->
 <!-- <br> -->
 
-Software & programming {data-icon=chart-line}
+Open-source software {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('software')
 ```
-
 
 Selected Publications {data-icon=book}
 --------------------------------------------------------------------------------
