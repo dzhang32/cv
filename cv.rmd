@@ -84,8 +84,6 @@ CV %>% print_skills("technology")
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-The source code is available on [github.com/dzhang32/cv](https://github.com/dzhang32/cv). 
-
 Last updated on `r Sys.Date()`.
 
 Main
