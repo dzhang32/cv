@@ -125,5 +125,32 @@ sup {
 }
 
 #open-source-software .details div {
-  margin-top: 5px !important;
+  margin-top: 3px !important;
+}
+
+/* Make margins smaller */
+
+* {         
+  /* --pagedjs-margin-right: 0.1in; */
+  /* --pagedjs-margin-left: 0.1in; */    
+  --pagedjs-margin-top: 0.75in;     
+  --pagedjs-margin-bottom: 0.75in;   
+}      
+
+:root{     
+  /* --sidebar-width: 11rem; side bar width */     
+}
+
+/* Align sidebar labels with contents */
+
+#contact h2 {
+  padding-left: 16px;
+}
+
+#languages h2 {
+  padding-left: 16px;
+}
+
+#technologies h2 {
+  padding-left: 16px;
 }
