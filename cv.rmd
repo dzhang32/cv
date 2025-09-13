@@ -7,7 +7,7 @@ params:
     value: false
 output:
   pagedown::html_resume:
-    css: ['dd_cv.css', 'resume']
+    css: ['cv.css', 'resume']
     self_contained: true
     includes:
       after_body: footer.html
