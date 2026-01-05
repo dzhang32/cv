@@ -29,11 +29,20 @@ sup {
   break-inside: avoid;
 }
 
+/* Make margins smaller */
+
 * {
   /* Override default right margin for sidebar*/
   --pagedjs-margin-right: 0.2in;
   --pagedjs-margin-left: 0.2in;
 }
+
+* {         
+  /* --pagedjs-margin-right: 0.1in; */
+  /* --pagedjs-margin-left: 0.1in; */    
+  --pagedjs-margin-top: 0.5in;     
+  --pagedjs-margin-bottom: 0.5in;   
+}      
 
 /* Customize some of the sizing variables */
 :root {
@@ -127,15 +136,6 @@ sup {
 #open-source-software .details div {
   margin-top: 3px !important;
 }
-
-/* Make margins smaller */
-
-* {         
-  /* --pagedjs-margin-right: 0.1in; */
-  /* --pagedjs-margin-left: 0.1in; */    
-  --pagedjs-margin-top: 0.5in;     
-  --pagedjs-margin-bottom: 0.5in;   
-}      
 
 :root{     
   /* --sidebar-width: 11rem; side bar width */     
